@@ -3,19 +3,37 @@ import Card from '@/components/sub/Card';
 
 const Defi: React.FC = () => {
   return (
-    <div id="defi" className="min-h-screen bg-gradient-to-r from-blue-50 to-purple-50 py-40">
+    <div id="defi" className="min-h-screen bg-gradient-to-r from-blue-50 to-purple-50 py-40"
+    style={{
+      background: '#000000',
+      backgroundImage: `
+        linear-gradient(
+          -90deg,
+          transparent calc(5em - 1px),
+          rgba(255, 255, 255, 0.2) calc(5em - 1px + 1px),
+          rgba(255, 255, 255, 0.2) 5em
+        ),
+        linear-gradient(
+          0deg,
+          transparent calc(5em - 1px),
+          rgba(255, 255, 255, 0.2) calc(5em - 1px + 1px),
+          rgba(255, 255, 255, 0.2) 5em
+        )`,
+      backgroundSize: '5em 5em',
+    }}
+    >
       <Head>
         <title>Boost Your Yield in TON DeFi</title>
       </Head>
-      <main className="max-w-4xl mx-auto p-5 bg-white rounded-lg shadow-lg">
+      <main className="max-w-4xl mx-auto p-5 bg-transprent rounded-lg shadow-lg">
         <header className="text-center mb-10">
-          <h1 className="text-3xl font-bold text-blue-800">Boost Your Yield in TON DeFi</h1>
-          <p className="mt-4 text-lg text-gray-700">
+          <h1 className="text-3xl font-bold text-blue-600">Boost Your Yield in TON DeFi</h1>
+          <p className="mt-4 text-lg text-white">
             With stTON, you’re not just staking - you’re unlocking DeFi opportunities. Grow wealth by adding extra yield on top of staking reward.
           </p>
         </header>
         <section>
-          <h2 className="text-2xl font-semibold text-blue-800 mb-6">Provide Liquidity to Decentralized Exchanges</h2>
+          <h2 className="text-2xl font-semibold text-blue-600 mb-6">Provide Liquidity to Decentralized Exchanges</h2>
           <Card 
             pool="wTON-stTON" 
             apy="N/A" 

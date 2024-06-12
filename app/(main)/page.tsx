@@ -16,7 +16,7 @@ export default function Home() {
         <Aboutus/>
         <Benefits/>
         <Faq/>
-        {/* <Footer/> */}
+        <Footer/>
       </div>
     </main>
   );

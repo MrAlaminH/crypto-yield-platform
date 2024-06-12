@@ -1,14 +1,32 @@
 import React from 'react';
 import { FiDollarSign } from 'react-icons/fi';
 import Stats from '@/components/sub/Stats';
-import Link from 'next/link';
+
 
 const Hero: React.FC = () => {
   return (
-    <section id='stake' className="flex flex-col items-center justify-center min-h-screen bg-gradient-to-r from-blue-50 to-purple-50 p-4">
+    <section id='stake' className="flex flex-col items-center justify-center min-h-screen w-full p-4 py-40"
+    style={{
+      background: '#000000',
+      backgroundImage: `
+        linear-gradient(
+          -90deg,
+          transparent calc(5em - 1px),
+          rgba(255, 255, 255, 0.2) calc(5em - 1px + 1px),
+          rgba(255, 255, 255, 0.2) 5em
+        ),
+        linear-gradient(
+          0deg,
+          transparent calc(5em - 1px),
+          rgba(255, 255, 255, 0.2) calc(5em - 1px + 1px),
+          rgba(255, 255, 255, 0.2) 5em
+        )`,
+      backgroundSize: '5em 5em',
+    }}
+    >
       <div className="text-center">
-        <h1 className="text-4xl font-bold text-gray-800">Staking</h1>
-        <p className="mt-2 text-lg text-gray-600">TON liquid staking</p>
+        <h1 className="text-4xl font-bold text-blue-600"> Heda Stake</h1>
+        <p className="mt-2 text-lg text-white">TON liquid staking</p>
       </div>
       <div className="w-full max-w-md p-6 mt-8 bg-white rounded-lg shadow-md">
         <div className="flex items-center mb-4">
