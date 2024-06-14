@@ -1,10 +1,11 @@
 "use client";
 import React, { useState } from "react";
 import Image from "next/image";
-import { MdOutlineRocketLaunch } from "react-icons/md";
-import { HiOutlineBolt } from "react-icons/hi2";
+import { ImHome } from "react-icons/im";
 import { HiOutlineTrophy } from "react-icons/hi2";
-import { BsStars } from "react-icons/bs";
+import { FaUser } from "react-icons/fa";
+
+import { RiExternalLinkLine } from "react-icons/ri";
 
 const Nav = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -27,7 +28,7 @@ const Nav = () => {
           </a>
 
           <span className="self-center text-xl font-bold text-white">
-            Soda-Stake
+            Soltitude
           </span>
         </div>
 
@@ -67,7 +68,7 @@ const Nav = () => {
                 className="flex items-center gap-2  py-2 px-3 text-white bg-blue-700 rounded md:bg-transparent md:text-blue-700 md:p-0 md:dark:text-blue-500"
                 aria-current="page"
               >
-                <MdOutlineRocketLaunch /> Home
+                <ImHome /> Home
               </a>
             </li>
             <li>
@@ -75,7 +76,7 @@ const Nav = () => {
                 href="#about"
                 className="flex items-center gap-2  py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0 md:dark:hover:text-blue-500 dark:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700"
               >
-                <BsStars />
+                <FaUser />
                 About
               </a>
             </li>
@@ -91,10 +92,10 @@ const Nav = () => {
             <li>
               <a
                 href="/stake"
-                className="flex items-center gap-2  py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0 md:dark:hover:text-blue-500 dark:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700"
+                className="flex items-center gap-2  py-2 px-3 font-semibold  text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0 md:dark:hover:text-blue-500 dark:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700"
                 target="_blank"
               >
-                <HiOutlineBolt /> Get started
+                <RiExternalLinkLine /> Go to App
               </a>
             </li>
           </ul>

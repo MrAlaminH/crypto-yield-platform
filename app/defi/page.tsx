@@ -54,7 +54,7 @@ const Defi: React.FC = () => {
         ></div>
       </div>
 
-      <div className="absolute top-0 left-0 right-0 pt-20 pb-10">
+      <div className="absolute top-0 left-0 right-0 pt-24 ">
         {/* Page title and description */}
         <Head>
           <title>Boost Your Yield in TON DeFi</title>

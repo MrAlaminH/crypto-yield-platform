@@ -6,7 +6,7 @@ const Hero: React.FC = () => {
   return (
     <section
       id="stake"
-      className="relative flex flex-col items-center justify-center min-h-screen p-4  isolate  bg-gray-900 text-white"
+      className="relative flex flex-col items-center justify-center min-h-screen p-4 isolate  bg-gray-900 text-white"
       style={{
         overflowX: "hidden", // Prevent horizontal scrolling
       }}
@@ -54,7 +54,7 @@ const Hero: React.FC = () => {
         ></div>
       </div>
 
-      <div className="p-6 rounded-lg shadow-lg max-w-md mx-auto relative py-20 ">
+      <div className="p-6 rounded-lg shadow-lg max-w-md mx-auto relative mt-20 ">
         {/* Adjusted top padding to account for navbar height */}
         <div className="text-center">
           <h1 className="text-4xl font-bold text-blue-600">Stake Your Token</h1>
@@ -71,7 +71,7 @@ const Hero: React.FC = () => {
           <FiDollarSign className="text-gray-400" size={24} />
           <input
             placeholder="Amount"
-            className="w-full p-2 ml-2 border border-gray-300 rounded focus:outline-none focus:ring-2 focus:ring-blue-500"
+            className="w-full p-2 ml-2 border text-black border-gray-300 rounded focus:outline-none focus:ring-2 focus:ring-blue-500"
           />
           <button className="px-4 py-2 ml-2 text-gray-500 bg-gray-100 border border-gray-300 rounded hover:bg-gray-200">
             Max

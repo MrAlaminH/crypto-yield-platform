@@ -1,62 +1,116 @@
-import React from 'react'
+import React from "react";
+import Image from "next/image";
 
 const Benefits = () => {
   return (
-    <section id='benifit' className="bg-gray-900 py-16">
-    <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
-        <h2 className="text-3xl font-extrabold text-white">The benefits you get</h2>
-        <div className="mt-12 grid grid-cols-1 gap-8 sm:grid-cols-2 lg:grid-cols-3">
-            <div>
-                <div className="flex items-center justify-center h-12 w-12 rounded-md bg-indigo-500 text-white">
-                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth="1.5"
-                        stroke="currentColor" className="w-6 h-6">
-                        <path strokeLinecap="round" strokeLinejoin="round"
-                            d="M12 21v-8.25M15.75 21v-8.25M8.25 21v-8.25M3 9l9-6 9 6m-1.5 12V10.332A48.36 48.36 0 0012 9.75c-2.551 0-5.056.2-7.5.582V21M3 21h18M12 6.75h.008v.008H12V6.75z" />
-                    </svg>
-
-                </div>
-                <div className="mt-5">
-                    <h3 className="text-lg font-medium text-white">Mission</h3>
-                    <p className="mt-2 text-base text-gray-500">We aim to make the world a better place through innovation
-                        and collaboration.</p>
-                </div>
-            </div>
-            <div>
-                <div className="flex items-center justify-center h-12 w-12 rounded-md bg-indigo-500 text-white">
-                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth="1.5"
-                        stroke="currentColor" className="w-6 h-6">
-                        <path strokeLinecap="round" strokeLinejoin="round"
-                            d="M4.26 10.147a60.436 60.436 0 00-.491 6.347A48.627 48.627 0 0112 20.904a48.627 48.627 0 018.232-4.41 60.46 60.46 0 00-.491-6.347m-15.482 0a50.57 50.57 0 00-2.658-.813A59.905 59.905 0 0112 3.493a59.902 59.902 0 0110.399 5.84c-.896.248-1.783.52-2.658.814m-15.482 0A50.697 50.697 0 0112 13.489a50.702 50.702 0 017.74-3.342M6.75 15a.75.75 0 100-1.5.75.75 0 000 1.5zm0 0v-3.675A55.378 55.378 0 0112 8.443m-7.007 11.55A5.981 5.981 0 006.75 15.75v-1.5" />
-                    </svg>
-
-                </div>
-                <div className="mt-5">
-                    <h3 className="text-lg font-medium text-white">Values</h3>
-                    <p className="mt-2 text-base text-gray-500">We believe in honesty, integrity, and respect for all
-                        individuals.</p>
-                </div>
-            </div>
-            <div>
-                <div className="flex items-center justify-center h-12 w-12 rounded-md bg-indigo-500 text-white">
-                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth="1.5"
-                        stroke="currentColor" className="w-6 h-6">
-                        <path strokeLinecap="round" strokeLinejoin="round"
-                            d="M2.036 12.322a1.012 1.012 0 010-.639C3.423 7.51 7.36 4.5 12 4.5c4.638 0 8.573 3.007 9.963 7.178.07.207.07.431 0 .639C20.577 16.49 16.64 19.5 12 19.5c-4.638 0-8.573-3.007-9.963-7.178z" />
-                        <path strokeLinecap="round" strokeLinejoin="round" d="M15 12a3 3 0 11-6 0 3 3 0 016 0z" />
-                    </svg>
-
-                </div>
-                <div className="mt-5">
-                    <h3 className="text-lg font-medium text-white">Vision</h3>
-                    <p className="mt-2 text-base text-gray-500">We envision a world where technology is used to solve the
-                        most pressing issues facing humanity and improve peoples lives.</p>
-                </div>
-            </div>
+    <section id="benifit" className="bg-gray-900 py-16">
+        <div
+          aria-hidden="true"
+          className="absolute inset-0 h-max w-full m-auto grid grid-cols-2 -space-x-52 opacity-20"
+        >
+          <div className="blur-[106px] h-56 bg-gradient-to-br  to-purple-400 from-blue-700"></div>
+          <div className="blur-[106px] h-32 bg-gradient-to-r from-cyan-400  to-indigo-600"></div>
         </div>
+        <div className="max-w-7xl mx-auto px-6 md:px-12 xl:px-6 ">
+          <div className="flex justify-center">
+            <div className="md:w-2/3 lg:w-1/2 mt-12 text-gray-100 ">
+              <h2 className="my-8 text-center  text-3xl font-bold text-blue-600 md:text-4xl">
+                Our Benefits
+              </h2>
+              <p className="text-gray-300 text-center">
+                Unlock liquidity and enhance yields with our staking platform.
+              </p>
+            </div>
+          </div>
+          <div className="mt-16 grid divide-x divide-y  bg-blue-600 rounded-md bg-clip-padding backdrop-filter bg-opacity-10 border border-blue-400 shadow-md sm:grid-cols-2 lg:grid-cols-4  lg:divide-y-0 xl:grid-cols-4">
+            <div className="group relative ">
+              <div className="relative space-y-8 py-12 p-8">
+                <Image
+                  src="https://www.svgrepo.com/show/164986/logo.svg"
+                  loading="lazy"
+                  width="200"
+                  height="200"
+                  className="w-12 h-12 rounded-full"
+                  alt="svg image"
+                />
+                <div className="space-y-2">
+                  <h5 className="text-xl font-semibold text-white transition group-hover:text-secondary">
+                    Decentralized
+                  </h5>
+                  <p className="text-gray-300">
+                    Our platform is built on decentralized blockchain
+                    technology, ensuring transparency and security.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div className="group relative ">
+              <div className="relative space-y-8 py-12 p-8">
+                <Image
+                  src="https://www.svgrepo.com/show/120853/logo.svg"
+                  loading="lazy"
+                  width="200"
+                  height="200"
+                  className="w-12 h-12 rounded-full"
+                  alt="svg image"
+                />
+                <div className="space-y-2">
+                  <h5 className="text-xl font-semibold text-white transition group-hover:text-secondary">
+                    Accessible
+                  </h5>
+                  <p className="text-gray-300">
+                    Our user-friendly platform makes staking accessible to both
+                    individual and institutional investors.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div className="group relative ">
+              <div className="relative space-y-8 py-12 p-8">
+                <Image
+                  src="https://www.svgrepo.com/show/120852/logo.svg"
+                  loading="lazy"
+                  width="200"
+                  height="200"
+                  className="w-12 h-12 rounded-full"
+                  alt="svg image"
+                />
+                <div className="space-y-2">
+                  <h5 className="text-xl font-semibold text-white transition group-hover:text-secondary">
+                    Secure
+                  </h5>
+                  <p className="text-gray-300">
+                    Our platform prioritizes security, utilizing advanced
+                    cryptographic protocols and best practices.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div className="group relative ">
+              <div className="relative space-y-8 py-12 p-8">
+                <Image
+                  src="https://www.svgrepo.com/show/120850/logo.svg"
+                  loading="lazy"
+                  width="200"
+                  height="200"
+                  className="w-12 h-12 rounded-full"
+                  alt="svg image"
+                />
+                <div className="space-y-2">
+                  <h5 className="text-xl font-semibold text-white transition group-hover:text-secondary">
+                    Rewarding
+                  </h5>
+                  <p className="text-gray-300">
+                    Earn attractive rewards by staking your digital assets and
+                    contributing to the growth of blockchain networks.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+    </section>
+  );
+};
 
-    </div>
-</section>
-  )
-}
-
-export default Benefits
+export default Benefits;
