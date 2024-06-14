@@ -1,5 +1,6 @@
 import Head from "next/head";
 import Card from "@/components/sub/Card";
+import Footer from "@/components/main/Footer";
 
 const Defi: React.FC = () => {
   return (
@@ -79,40 +80,46 @@ const Defi: React.FC = () => {
                 pool="wTON-stTON"
                 apy="N/A"
                 boost="5.67% APY"
-                url="https://megaton.fi"
+                url="#"
                 buttonText="Provide Liquidity"
+                website="Sodality.xyz"
               />
               <Card
                 pool="TON-stTON"
                 apy="1.09%"
                 boost="TBD"
-                url="https://dedust.io"
+                url="#"
                 buttonText="Provide Liquidity"
+                website="Sodality.xyz"
               />
               <Card
                 pool="TON-stTON"
                 apy="3.70%"
                 boost="N/A"
-                url="https://ston.fi"
+                url="#"
                 buttonText="Provide Liquidity"
+                website="Sodality.xyz"
               />
               <Card
                 pool="TON-stTON"
                 apy="3.70%"
                 boost="N/A"
-                url="https://ston.fi"
+                url="#"
                 buttonText="Provide Liquidity"
+                website="Sodality.xyz"
               />
               <Card
                 pool="TON-stTON"
                 apy="3.70%"
                 boost="N/A"
-                url="https://ston.fi"
+                url="#"
                 buttonText="Provide Liquidity"
+                website="Sodality.xyz"
               />
             </div>
           </section>
         </main>
+        <Footer />
       </div>
     </div>
   );

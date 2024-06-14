@@ -1,5 +1,5 @@
 import Navbar from "@/components/main/Navbar"
-import "./globals.css";
+import '../../app/globals.css';
 import Footer from "@/components/main/Footer";
 export const metadata = {
   title: 'Next.js',

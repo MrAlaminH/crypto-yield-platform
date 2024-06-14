@@ -2,10 +2,14 @@
 @tailwind components;
 @tailwind utilities;
 
+
   /* Add this CSS to your styles */
 @media screen and (max-width: 768px) {
     .flex-col {
       flex-direction: column;
     }
   }
-  
+  body {
+    @apply bg-gray-900 text-white; /* Applies background color and text color */
+    font-family: Arial, sans-serif; /* Optional: Set a default font */
+  }

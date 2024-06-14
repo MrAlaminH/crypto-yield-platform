@@ -49,13 +49,13 @@ const RewardsSection: React.FC = () => {
       </div>
 
       {/* Content container */}
-      <div id="rewards" className=" p-6 rounded-lg shadow-lg max-w-md mx-auto relative bg-gradient-to-r from-violet-200 to-pink-200 ">
-        <h2 className="text-4xl font-bold text-center text-black mb-4">Rewards</h2>
-        <p className="text-sm text-black mb-4">
+      <div id="rewards" className=" p-6 shadow-lg max-w-md mx-auto relative bg-gray-500 rounded-md bg-clip-padding backdrop-filter bg-opacity-10 border border-gray-100 ">
+        <h2 className="text-4xl font-bold text-center text-gray-300 mb-4">Rewards</h2>
+        <p className="text-sm text-gray-300 mb-4">
           Stake your TON with bemo, enjoy extra Yield with DeFi Benefits, swap
           on any DEX or just hold it in your wallet.
         </p>
-        <p className="text-sm text-black mb-4">
+        <p className="text-sm text-gray-300 mb-4">
           We will reward your actions with Staking Experience Points $TXP. At
           the end of the Incentive Program, all the $TXP holders will share a
           $BMO token pool of up to 20% of the total token supply.
@@ -63,7 +63,7 @@ const RewardsSection: React.FC = () => {
         <button className="bg-blue-600 text-white font-bold py-2 px-4 rounded-md hover:bg-blue-700 w-full mb-4">
           Connect your wallet to see your rewards
         </button>
-        <p className="text-xs text-black">
+        <p className="text-xs text-gray-300">
           Due to high loads on the blockchain network, the accrual of $TXP can
           take up to 5 days.
         </p>

@@ -15,6 +15,11 @@ const config: Config = {
       },
     },
   },
-  plugins: [],
+  variants: {
+    backdropBlur: ['responsive'],
+  },
+  plugins: [
+    require('tailwindcss-filters'),
+  ],
 };
 export default config;

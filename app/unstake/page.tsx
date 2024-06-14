@@ -61,13 +61,13 @@ const Hero: React.FC = () => {
       </div>
       <div className="p-6 rounded-lg shadow-lg max-w-md mx-auto relative py-20">
         <div className="text-center">
-          <h1 className="text-4xl font-bold text-blue-600">Soda Unstake</h1>
+          <h1 className="text-4xl font-bold text-blue-600">Unstake Your Token </h1>
           <p className="mt-2 text-lg">TON liquid staking</p>
         </div>
       </div>
 
       {/* Main content */}
-      <div className="relative z-10 w-full overflow-hidden max-w-xl mx-auto md:max-w-3xl md:w-full p-6 bg-gradient-to-r from-violet-200 to-pink-200 rounded-lg shadow-md">
+      <div className="relative z-10 w-full overflow-hidden max-w-xl mx-auto md:max-w-3xl md:w-full p-6 bg-gray-500 rounded-md bg-clip-padding backdrop-filter bg-opacity-10 border border-gray-100 shadow-md">
         <div className="flex items-center mb-4">
           <FiDollarSign className="text-gray-400" size={24} />
           <input
@@ -80,7 +80,7 @@ const Hero: React.FC = () => {
           </button>
         </div>
         <div className="flex flex-col items-center justify-center p-4">
-          <div className="flex space-x-2 mb-4">
+          <div className="flex space-x-2 mb-4 md:gap-6">
             <button
               className={`py-2 px-4 rounded-md shadow-md ${
                 activeButton === "unstakeIn"
@@ -103,22 +103,22 @@ const Hero: React.FC = () => {
             </button>
           </div>
           {activeButton === "unstakeIn" && (
-            <div className="text-gray-900">
+            <div className="text-gray-300">
               {/* Content for Unstake in 51h */}
               <p>Unstaking will be available in 51 hours.</p>
             </div>
           )}
           {activeButton === "unstakeNow" && (
-            <div className="text-gray-900">
+            <div className="text-gray-300">
               {/* Content for Unstake now */}
               <p>You can unstake immediately.</p>
             </div>
           )}
         </div>
-        <button className="w-full px-4 py-2 text-white bg-blue-500 rounded hover:bg-blue-600">
+        <button className="w-full px-4 py-2 text-white bg-gradient-to-r from-blue-500 via-blue-600 to-blue-700 hover:bg-gradient-to-br focus:ring-4 focus:outline-none focus:ring-blue-300 dark:focus:ring-blue-800 shadow-md shadow-blue-500/50 dark:shadow-md dark:shadow-blue-800/80">
           Request Unstake
         </button>
-        <p className="mt-4 text-xs text-gray-600">
+        <p className="mt-4 text-xs text-gray-300">
           By staking you affirm compliance with and agree to our{" "}
           <a href="#" className="text-blue-500 underline">
             Terms

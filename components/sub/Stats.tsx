@@ -17,7 +17,7 @@ const Stats = () => {
   }, []);
 
   return (
-    <div className="bg-gradient-to-r from-violet-200 to-pink-200 rounded-lg shadow-lg overflow-hidden max-w-xl mx-auto mt-8 md:max-w-3xl md:w-full">
+    <div className="bg-gray-500 rounded-md bg-clip-padding backdrop-filter bg-opacity-10 border border-gray-100 shadow-lg overflow-hidden max-w-xl mx-auto mt-8 md:max-w-3xl md:w-full">
       <div className="p-6 md:p-8">
         <h2 className="text-3xl font-bold text-white mb-4">Staking Stats</h2>
         <div className="grid grid-cols-1 gap-6">
