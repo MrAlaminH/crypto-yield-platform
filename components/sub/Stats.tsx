@@ -1,5 +1,6 @@
 "use client";
 import { useState, useEffect } from "react";
+import Link from "next/link";
 
 const Stats = () => {
   const [stats] = useState({
@@ -19,8 +20,14 @@ const Stats = () => {
   return (
     <div className="bg-gray-500 rounded-md bg-clip-padding backdrop-filter bg-opacity-10 border border-gray-100 shadow-lg overflow-hidden max-w-xl mx-auto mt-8 md:max-w-3xl md:w-full">
       <div className="p-6 md:p-8">
-        <h2 className="text-3xl font-bold text-white mb-4">Staking Stats</h2>
-        <div className="grid grid-cols-1 gap-6">
+        <div className="flex justify-between items-center border-b-2 border-[#E6E8EC] pb-4">
+          <h2 className="text-3xl font-bold text-white mb-4">Staking Stats</h2>
+        <Link href="#" className="text-sm font-semibold text-blue-500" prefetch={false}>
+              TON Explorer
+            </Link>
+        </div>
+        
+        <div className="grid grid-cols-1 gap-6 px-10">
           <div className="bg-gray-800 bg-opacity-50 rounded-lg py-4 px-6">
             <div className="flex items-center justify-between">
               <span className="text-white mr-4">Exchange rate:</span>
