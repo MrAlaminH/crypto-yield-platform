@@ -5,8 +5,8 @@ import Link from "next/link";
 const Stats = () => {
   const [stats] = useState({
     exchangeRate: 1.037,
-    tvlUsd: 73863233.17,
-    tvlTon: 10720742.14,
+    tvlUsd: 73863,
+    tvlTon: 10742,
     tonPrice: 6.89,
     apy: 3.47,
   });
@@ -22,17 +22,21 @@ const Stats = () => {
       <div className="p-6 md:p-8">
         <div className="flex justify-between items-center border-b-2 border-[#E6E8EC] pb-4">
           <h2 className="text-3xl font-bold text-white mb-4">Staking Stats</h2>
-        <Link href="#" className="text-sm font-semibold text-blue-500" prefetch={false}>
-              TON Explorer
-            </Link>
+          <Link
+            href="#"
+            className="text-sm font-semibold text-blue-500"
+            prefetch={false}
+          >
+            TON Explorer
+          </Link>
         </div>
-        
-        <div className="grid grid-cols-1 gap-6 px-10">
+
+        <div className="grid grid-cols-1 gap-6 p-4 md:px-10">
           <div className="bg-gray-800 bg-opacity-50 rounded-lg py-4 px-6">
             <div className="flex items-center justify-between">
               <span className="text-white mr-4">Exchange rate:</span>
               <span className="font-semibold text-green-400">
-                sTON = {stats.exchangeRate.toFixed(3)} TON
+                sTON = {stats.exchangeRate.toFixed(3)} 
               </span>
             </div>
           </div>
