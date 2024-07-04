@@ -46,7 +46,7 @@ const Navbar = () => {
       </nav>
 
       {/* Existing navbar for desktop view (hidden on mobile and tablet) */}
-      <nav className="hidden md:flex fixed w-full z-20 md:top-0 md:border-b border-gray-200 dark:border-gray-600 bg-white dark:bg-gray-900">
+      <nav className="hidden md:flex fixed w-full z-20 md:top-0 md:border-b border-gray-200 dark:border-gray-600 bg-gray-900">
         <div className="max-w-screen-xl flex items-center justify-between mx-auto p-4 space-x-40">
           <div className="flex items-center space-x-3">
             <Link href="https://crypto-yield-platform.vercel.app/">
