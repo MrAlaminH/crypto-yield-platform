@@ -3,6 +3,7 @@ import React, { useState } from "react";
 import { FiDollarSign } from "react-icons/fi";
 import Stats from "@/components/sub/Stats";
 import "./globals.css"; // Assuming this file contains global styles
+import Charts from "@/components/sub/Charts";
 
 const Hero: React.FC = () => {
   const [activeButton, setActiveButton] = useState<"unstakeIn" | "unstakeNow">(
@@ -61,7 +62,9 @@ const Hero: React.FC = () => {
       </div>
       <div className="p-6 rounded-lg shadow-lg max-w-md mx-auto relative mt-20">
         <div className="text-center">
-          <h1 className="text-4xl font-bold text-blue-600">Unstake Your Token </h1>
+          <h1 className="text-4xl font-bold text-blue-600">
+            Unstake Your Token{" "}
+          </h1>
           <p className="mt-2 text-lg">TON liquid staking</p>
         </div>
       </div>
@@ -71,7 +74,6 @@ const Hero: React.FC = () => {
         <div className="flex items-center mb-4">
           <FiDollarSign className="text-gray-400" size={24} />
           <input
-            
             placeholder="Amount"
             className="w-full p-2 ml-2 border text-black border-gray-300 rounded focus:outline-none focus:ring-2 focus:ring-blue-500"
           />
@@ -137,6 +139,12 @@ const Hero: React.FC = () => {
 
       {/* Stats component */}
       <Stats />
+      <div className="bg-gray-500 py-2 rounded-md bg-clip-padding backdrop-filter bg-opacity-10 border border-gray-100 shadow-lg overflow-hidden max-w-xl mx-auto mt-8 md:max-w-3xl md:w-full">
+        <h1 className="text-center text-3xl font-bold text-blue-600">
+          Live Price Chart
+        </h1>
+        <Charts />
+      </div>
     </section>
   );
 };

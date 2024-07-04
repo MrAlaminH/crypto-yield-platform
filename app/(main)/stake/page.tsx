@@ -1,6 +1,7 @@
 import React from "react";
 import { FiDollarSign } from "react-icons/fi";
 import Stats from "@/components/sub/Stats";
+import Charts from "@/components/sub/Charts";
 
 const Hero: React.FC = () => {
   return (
@@ -99,6 +100,12 @@ const Hero: React.FC = () => {
 
       {/* Stats component */}
       <Stats />
+      <div className="bg-gray-500 py-2 rounded-md bg-clip-padding backdrop-filter bg-opacity-10 border border-gray-100 shadow-lg overflow-hidden max-w-xl mx-auto mt-8 md:max-w-3xl md:w-full">
+        <h1 className="text-center text-3xl font-bold text-blue-600">
+          Live Price Chart
+        </h1>
+        <Charts />
+      </div>
     </section>
   );
 };

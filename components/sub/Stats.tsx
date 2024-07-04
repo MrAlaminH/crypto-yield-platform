@@ -18,7 +18,7 @@ const Stats = () => {
   }, []);
 
   return (
-    <div className="bg-gray-500 rounded-md bg-clip-padding backdrop-filter bg-opacity-10 border border-gray-100 shadow-lg overflow-hidden max-w-xl mx-auto mt-8 md:max-w-3xl md:w-full">
+    <div className="bg-gray-500 w-full flex-grow rounded-md bg-clip-padding backdrop-filter bg-opacity-10 border border-gray-100 shadow-lg overflow-hidden max-w-xl mx-auto mt-8 md:max-w-3xl md:w-full">
       <div className="p-6 md:p-8">
         <div className="flex justify-between items-center border-b-2 border-[#E6E8EC] pb-4">
           <h2 className="text-3xl font-bold text-white mb-4">Staking Stats</h2>
@@ -36,7 +36,7 @@ const Stats = () => {
             <div className="flex items-center justify-between">
               <span className="text-white mr-4">Exchange rate:</span>
               <span className="font-semibold text-green-400">
-                sTON = {stats.exchangeRate.toFixed(3)} 
+                sTON = {stats.exchangeRate.toFixed(3)}
               </span>
             </div>
           </div>

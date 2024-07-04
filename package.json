@@ -10,15 +10,18 @@
   },
   "dependencies": {
     "clsx": "^2.1.1",
+    "date-fns": "^3.6.0",
     "framer-motion": "^11.2.10",
     "next": "14.2.3",
     "react": "^18",
     "react-dom": "^18",
     "react-icons": "^5.2.1",
+    "recharts": "^2.12.7",
     "tailwind-merge": "^2.3.0",
     "tailwindcss-filters": "^3.0.0"
   },
   "devDependencies": {
+    "@types/date-fns": "^2.6.0",
     "@types/node": "^20",
     "@types/react": "^18",
     "@types/react-dom": "^18",

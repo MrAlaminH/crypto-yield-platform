@@ -86,7 +86,7 @@ const Navbar = () => {
                   href="/defi"
                   className="flex items-center gap-2 py-2 px-3 text-gray-900 hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0 md:dark:hover:text-blue-500 dark:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent"
                 >
-                  <HiOutlineTrophy /> DeFi Benefits
+                  <HiOutlineTrophy /> Benefits
                 </Link>
               </li>
               <li>

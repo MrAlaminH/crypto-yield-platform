@@ -2,14 +2,23 @@
 @tailwind components;
 @tailwind utilities;
 
-
-  /* Add this CSS to your styles */
+/* Add this CSS to your styles */
 @media screen and (max-width: 768px) {
-    .flex-col {
-      flex-direction: column;
-    }
+  .flex-col {
+    flex-direction: column;
   }
-  body {
-    @apply bg-gray-900 text-white; /* Applies background color and text color */
-    font-family: Arial, sans-serif; /* Optional: Set a default font */
+}
+body {
+  @apply bg-gray-900 text-white; /* Applies background color and text color */
+  font-family: Arial, sans-serif; /* Optional: Set a default font */
+}
+
+.chart-container {
+  width: 100%;
+}
+
+@media (min-width: 768px) {
+  .chart-container {
+    width: 80%; /* Adjust the width for desktop */
   }
+}
