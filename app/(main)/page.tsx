@@ -7,20 +7,17 @@ import Faq from "@/components/main/Faq";
 import Footerlg from "@/components/main/Footerlg";
 import Blog from "@/components/main/blog";
 
-
-
-
 export default function Home() {
   return (
     <main className="h-full w-full">
       <div className="flex flex-col">
-        <Nav/>
+        <Nav />
         <Hero />
-        <Aboutus/>
-        <Benefits/>
-        <Blog/>
-        <Faq/>
-        <Footerlg/>
+        <Aboutus />
+        <Benefits />
+        <Blog />
+        <Faq />
+        <Footerlg />
       </div>
     </main>
   );
