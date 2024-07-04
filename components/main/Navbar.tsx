@@ -17,7 +17,7 @@ const Navbar = () => {
   return (
     <>
       {/* Navbar for mobile and tablet view */}
-      <nav className="fixed w-full z-20 top-0 border-b border-gray-200 dark:border-gray-600 bg-white dark:bg-gray-900 md:hidden">
+      <nav className="fixed w-full z-20 top-0 border-b border-gray-200 dark:border-gray-600 bg-gray-900 md:hidden">
         <div className="max-w-screen-xl flex items-center justify-between mx-auto p-4">
           <Link
             href="https://crypto-yield-platform.vercel.app/"
@@ -111,7 +111,7 @@ const Navbar = () => {
       </nav>
 
       {/* Mobile bottom navigation (unchanged) */}
-      <div className="fixed inset-x-0 bottom-0 z-20 pt-0 bg-white dark:bg-gray-900 md:hidden border-t border-gray-200 dark:border-gray-600">
+      <div className="fixed inset-x-0 bottom-0 z-20 pt-0 bg-gray-900 md:hidden border-t border-gray-200">
         <ul className="flex justify-around py-2">
           <li>
             <Link
